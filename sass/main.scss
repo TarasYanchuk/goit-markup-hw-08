@@ -1,0 +1,19 @@
+@import "./utils/vars";
+@import "./utils/variables";
+@import "./utils/mixin";
+@import "./components/container";
+@import "./base/common";
+//////////////////////Webstudio//////////////////////////////
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/photo";
+@import "./layout/team";
+@import "./layout/clients";
+///////////////////////Portfolio//////////////////////////////
+@import "./layout/buttonnav";
+@import "./layout/breadcrumbs";
+////////////////////////Footer////////////////////////////////
+@import "./layout/footer";
+//////////////////////////Modal///////////////////////////////
+@import "./layout/modal";

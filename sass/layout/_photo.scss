@@ -1,0 +1,28 @@
+.photo__title {
+  @include flexCenter;
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  color: $primary-bg-color;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.photo__list {
+  display: flex;
+}
+.photo__item {
+  position: relative;
+  display: inline-block;
+}
+.photo__item:not(:last-child) {
+  margin-right: 30px;
+}
+.photo__item:not(:last-child) {
+  width: calc((100% - 60px) / 3);
+}

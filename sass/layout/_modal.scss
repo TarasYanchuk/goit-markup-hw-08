@@ -1,0 +1,194 @@
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: $primary-bg-color;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+}
+.modal__title {
+  margin: 0%;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+.modal__field {
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $secondary-text-color;
+  margin-bottom: 4px;
+}
+.modal__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 14px;
+  .modal__input:focus + & {
+    fill: $accent-text-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.modal__input {
+  width: 100%;
+  height: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border: 1px solid $accent-text-color;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.modal__text {
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding: 12px 16px 12px 16px;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  &:focus {
+    border: 1px solid $accent-text-color;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.modal__check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid $primary-text-color;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+.modal__check:checked + .modal__check-text span {
+  background-color: $accent-text-color;
+  border: none;
+}
+.modal__check-icon {
+  padding: 1px;
+  color: $primary-bg-color;
+}
+.modal__button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: $primary-bg-color;
+  color: #0000;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: $accent-text-color;
+  }
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal__check:focus + .modal__check-text span {
+  box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+}
+.modal__check-text {
+  @include flexCenter;
+  margin-bottom: 30px;
+  margin-right: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+}
+.modal__license {
+  text-decoration: underline;
+  color: $accent-text-color;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.modal__text {
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding: 12px 16px 12px 16px;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__submit-button {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px 32px;
+  color: $primary-bg-color;
+  background-color: $accent-text-color;
+  font-family: $fontPrimary;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $primary-bg-color;
+    background-color: #188ce8;
+  }
+}

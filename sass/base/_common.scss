@@ -1,0 +1,37 @@
+.list,
+.logo,
+.link,
+.contact {
+  list-style: none;
+  text-decoration: none;
+  padding: 0%;
+  margin: 0%;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+.body {
+  background-color: $primary-bg-color;
+  font-family: $fontPrimary;
+  font-style: normal;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
