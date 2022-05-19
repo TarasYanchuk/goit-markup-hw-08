@@ -12,22 +12,35 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 95vw;
+  height: 609px;
   background-color: $primary-bg-color;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
+  @include mobile {
+    width: 450px;
+  }
+  @include tablet {
+    width: 450px;
+  }
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__title {
   margin: 0%;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.17;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: $primary-text-color;
+  @include desktop {
+    line-height: 1.17;
+  }
 }
 .modal__field {
   margin-top: 10px;
@@ -137,12 +150,16 @@
 .modal__check-text {
   @include flexCenter;
   margin-bottom: 30px;
-  margin-right: 8px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: $secondary-text-color;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+    margin-right: 8px;
+  }
 }
 .modal__license {
   text-decoration: underline;

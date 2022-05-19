@@ -1,3 +1,9 @@
+.photo {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
 .photo__title {
   @include flexCenter;
   position: absolute;

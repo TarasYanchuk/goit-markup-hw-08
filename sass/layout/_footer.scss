@@ -8,7 +8,12 @@
     margin-top: 60px;
   }
   .container {
-    display: flex;
+    display: block;
+  }
+  @include desktop {
+    .container {
+      display: flex;
+    }
   }
 }
 .footer__container {
@@ -41,6 +46,7 @@
 }
 .footer__title,
 .footer__join-title {
+  text-align: center;
   margin-bottom: 20px;
   color: $primary-bg-color;
   font-weight: 700;
@@ -48,9 +54,27 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  @include desktop {
+    text-align: inherit;
+  }
+}
+.footer__meta {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+  }
 }
 .footer-address {
-  margin-right: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+  @include tablet {
+    margin-right: 165px;
+  }
+  @include desktop {
+    margin-bottom: 0px;
+    margin-right: 70px;
+    text-align: inherit;
+  }
 }
 
 .footer__social-link {
@@ -69,6 +93,10 @@
 .footer__social-list {
   @include flexCenter;
   margin-top: 16px;
+  margin-bottom: 60px;
+  @include desktop {
+    margin-bottom: 0px;
+  }
 }
 .footer__social-item {
   width: 44px;
@@ -78,13 +106,14 @@
   margin-right: 10px;
 }
 .footer__join-form {
-  @include flexCenter;
+  @include desktop {
+    @include flexCenter;
+  }
 }
 .footer__join-mail {
-  width: 358px;
+  width: 95vw;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -93,8 +122,21 @@
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  @include mobile {
+    width: 450px;
+  }
+  @include tablet {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include desktop {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 .footer__join-button {
+  margin: 20px auto auto auto;
   @include flexCenter;
   width: 200px;
   height: 50px;
@@ -112,6 +154,9 @@
   &:focus {
     cursor: pointer;
     background-color: #188ce8;
+  }
+  @include desktop {
+    margin: inherit;
   }
 }
 .footer__join-text {

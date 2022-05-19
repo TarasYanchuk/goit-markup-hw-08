@@ -1,10 +1,12 @@
 .logo {
-  margin-right: 94px;
   color: $accent-text-color;
   font-family: $fontLogo;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  @include desktop {
+    margin-right: 94px;
+  }
 }
 .header__primary {
   color: $accent-text-color;
