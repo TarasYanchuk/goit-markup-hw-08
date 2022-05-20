@@ -13,7 +13,6 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -152,8 +151,6 @@ img {
 }
 
 .header__icon:hover, .header__icon:focus {
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2196f3;
 }
 @media screen and (min-width: 768px) {
@@ -253,6 +250,11 @@ img {
   background-color: #2196f3;
   border-radius: 2px;
 }
+@media screen and (min-width: 1200px) {
+  .nav__link--current::after {
+    bottom: -36px;
+  }
+}
 
 .contacts__link:hover .contacts__icon {
   color: #2196f3;
@@ -316,23 +318,28 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 5;
-  padding: 48px 40px;
-  font-size: 40px;
-  line-height: 1.18;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  background-color: #fff;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+    padding: 48px 40px;
+    font-size: 40px;
+    line-height: 1.18;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    background-color: #fff;
+    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .menu .container {
