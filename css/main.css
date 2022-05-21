@@ -131,12 +131,18 @@ img {
 }
 
 .header__container {
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    height: 80px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header__container {
@@ -241,7 +247,7 @@ img {
 
 .nav__link--current::after {
   left: 0;
-  bottom: -33px;
+  bottom: -32px;
   position: absolute;
   content: "";
   display: inline-block;
@@ -249,11 +255,6 @@ img {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
-}
-@media screen and (min-width: 1200px) {
-  .nav__link--current::after {
-    bottom: -38px;
-  }
 }
 
 .contacts__link:hover .contacts__icon {
@@ -275,6 +276,7 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts__item:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 0px;
   }
 }
 
@@ -316,6 +318,10 @@ img {
   margin-right: 10px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -430,6 +436,15 @@ img {
 }
 .menu__social-link {
   color: #2196f3;
+}
+@media screen and (max-width: 380px) {
+  .menu__social {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
 }
 
 .hero__title {
@@ -728,7 +743,11 @@ img {
   }
 }
 .team__list {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (min-width: 1200px) {
   .team__list {
@@ -920,8 +939,6 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: -30px;
-    margin-right: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1505,6 +1522,16 @@ img {
 .modal__license {
   text-decoration: underline;
   color: #2196f3;
+}
+.modal__license-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 470px) {
+  .modal__license-text {
+    display: flow-root;
+  }
 }
 .modal__license:hover {
   text-decoration: none;

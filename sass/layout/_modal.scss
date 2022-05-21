@@ -164,6 +164,12 @@
 .modal__license {
   text-decoration: underline;
   color: $accent-text-color;
+  &-text {
+    display: flex;
+    @media screen and (max-width: 470px) {
+      display: flow-root;
+    }
+  }
   &:hover {
     text-decoration: none;
   }
