@@ -89,13 +89,15 @@
   overflow: hidden;
 }
 .breadcrumbs__about {
+  display: inline-flex;
+  align-items: center;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   color: $primary-bg-color;
   background: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px 63px 24px;
+  padding: 0 24px;
   position: absolute;
   top: 0;
   left: 0;

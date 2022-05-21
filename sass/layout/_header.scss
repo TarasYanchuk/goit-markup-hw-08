@@ -4,9 +4,6 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  @include tablet {
-    margin-right: 88px;
-  }
   @include desktop {
     margin-right: 94px;
     display: flex;
@@ -56,6 +53,11 @@
 /*------------------------------Site-nav------------------------*/
 .header {
   border-bottom: solid 1px #ececec;
+  &__logo {
+    @include tablet {
+      margin-right: 88px;
+    }
+  }
 }
 .nav,
 .nav {
@@ -119,7 +121,7 @@
   background-color: $accent-text-color;
   border-radius: 2px;
   @include desktop {
-    bottom: -36px;
+    bottom: -38px;
   }
 }
 
