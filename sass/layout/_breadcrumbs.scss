@@ -1,6 +1,11 @@
 .breadcrumbs {
   padding-top: 60px;
   padding-bottom: 60px;
+  &__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
   @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -52,11 +57,9 @@
     }
   }
 }
-// .breadcrumbs__elements:not(:nth-child(3n)) {
-//   margin-right: 30px;
-//   margin-bottom: 30px;
-// }
+
 .breadcrumbs__holder {
+  flex-grow: 1;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;

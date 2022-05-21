@@ -35,7 +35,7 @@ img {
 }
 .title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -43,6 +43,7 @@ img {
   letter-spacing: 0.03em;
   color: $primary-text-color;
   @include desktop {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
   }

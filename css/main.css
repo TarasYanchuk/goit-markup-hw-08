@@ -71,7 +71,7 @@ img {
 
 .title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -81,6 +81,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
   }
@@ -925,6 +926,16 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.breadcrumbs__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
 @media screen and (min-width: 1200px) {
   .breadcrumbs {
     padding-top: 94px;
@@ -997,6 +1008,9 @@ img {
 }
 
 .breadcrumbs__holder {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -1226,7 +1240,7 @@ img {
 }
 
 .footer__join-mail {
-  width: 95vw;
+  width: 92vw;
   height: 50px;
   padding: 15px 16px;
   font-weight: 400;
@@ -1524,6 +1538,7 @@ img {
   color: #2196f3;
 }
 .modal__license-text {
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
