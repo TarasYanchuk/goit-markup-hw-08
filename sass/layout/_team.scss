@@ -28,11 +28,11 @@
   padding-bottom: 30px;
 }
 .team__flex-element {
-  @media screen and(max-width:768px) {
-    &:last-child {
-      margin-bottom: 0px;
-    }
-  }
+  // @media screen and(max-width:768px) {
+  //   &:last-child {
+  //     margin-bottom: 0px;
+  //   }
+  // }
   margin-bottom: 30px;
   display: inline-block;
   background-color: $primary-bg-color;
