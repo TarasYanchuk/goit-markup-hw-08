@@ -2,14 +2,12 @@
   &__item {
     margin-bottom: 30px;
   }
-  display: inline;
   @media screen and (max-width: 768px) {
     &__item:not(:last-child) {
       margin-bottom: 30px;
     }
   }
   @include tablet {
-    width: 768px;
     &__item {
       display: inline-block;
       width: calc((100% - 60px) / 2);
@@ -23,31 +21,17 @@
       width: 270px;
     }
   }
-  // padding-bottom: 0;
-  //&__item {
-  //   display: inline-block;
-  //   width: 270px;
-  //   margin-right: -3px;
-  // }
-  // &__item:not(:first-child) {
-  //   margin-left: 30px;
-  // }
   .about__list {
     @include tablet {
-      padding-top: 60px;
-      padding-bottom: 60px;
       display: flex;
       flex-wrap: wrap;
     }
     @include desktop {
-      padding-bottom: 0;
       flex-wrap: nowrap;
     }
     &__item:not(:first-child) {
       margin-left: 30px;
     }
-    padding-top: 94px;
-    padding-bottom: 0px;
   }
   .about__title {
     @include tablet {
@@ -61,7 +45,6 @@
     color: $primary-text-color;
     font-weight: 700;
     font-size: 14px;
-    //line-height: 1.14;
     text-transform: uppercase;
     letter-spacing: 0.03em;
   }
@@ -71,7 +54,6 @@
     color: $secondary-text-color;
     font-weight: 400;
     font-size: 14px;
-    //line-height: 1.8;
     letter-spacing: 0.03em;
   }
   .about__box {
