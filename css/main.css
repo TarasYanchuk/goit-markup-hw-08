@@ -728,6 +728,11 @@ img {
     width: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .team__flex-element {
+    width: calc((100% - 90px) / 4);
+  }
+}
 .team__list {
   gap: 30px;
   display: -webkit-box;

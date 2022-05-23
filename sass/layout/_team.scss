@@ -39,6 +39,11 @@
     width: calc((100% - 15px * 2) / 2);
   }
 }
+@include desktop {
+  .team__flex-element {
+    width: calc((100% - 30px * 3) / 4);
+  }
+}
 .team__list {
   gap: 30px;
   display: flex;
