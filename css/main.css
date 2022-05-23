@@ -554,9 +554,6 @@ img {
   background-color: #188ce8;
 }
 
-.about__item {
-  margin-bottom: 30px;
-}
 @media screen and (max-width: 768px) {
   .about__item:not(:last-child) {
     margin-bottom: 30px;
@@ -565,9 +562,7 @@ img {
 @media screen and (min-width: 768px) {
   .about__item {
     display: inline-block;
-    width: calc((100% - 60px) / 2);
-    margin: 15px;
-    margin-bottom: 30px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -580,6 +575,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .about .about__list {
+    gap: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -723,7 +719,6 @@ img {
 }
 
 .team__flex-element {
-  margin-bottom: 30px;
   display: inline-block;
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
@@ -731,21 +726,13 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-width: 768px) {
-  .team__flex-element:nth-child(2n+1) {
-    margin-right: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__flex-element:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  .team__flex-element:not(:last-child) {
-    width: calc((100% - 90px) / 4);
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .team__flex-element {
+    width: calc((100% - 30px) / 2);
   }
 }
 .team__list {
+  gap: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -957,11 +944,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .breadcrumbs__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
     margin-left: 0px;
@@ -979,7 +961,9 @@ img {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.breadcrumbs__elements:hover .breadcrumbs__about {
+.breadcrumbs__elements .list:hover:hover .breadcrumbs__about, .breadcrumbs__elements .list:hover:focus .breadcrumbs__about,
+.breadcrumbs__elements .list:focus:hover .breadcrumbs__about,
+.breadcrumbs__elements .list:focus:focus .breadcrumbs__about {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }

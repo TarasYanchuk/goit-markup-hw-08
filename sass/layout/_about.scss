@@ -1,7 +1,4 @@
 .about {
-  &__item {
-    margin-bottom: 30px;
-  }
   @media screen and (max-width: 768px) {
     &__item:not(:last-child) {
       margin-bottom: 30px;
@@ -10,9 +7,10 @@
   @include tablet {
     &__item {
       display: inline-block;
-      width: calc((100% - 60px) / 2);
-      margin: 15px;
-      margin-bottom: 30px;
+      width: calc((100% - 15px * 2) / 2);
+      // width: calc((100% - 60px) / 2);
+      // margin: 15px;
+      // margin-bottom: 30px;
     }
   }
   @include desktop {
@@ -23,6 +21,7 @@
   }
   .about__list {
     @include tablet {
+      gap: 30px;
       display: flex;
       flex-wrap: wrap;
     }
