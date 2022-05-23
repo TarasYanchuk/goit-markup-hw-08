@@ -43,10 +43,6 @@
   gap: 30px;
   display: flex;
   flex-wrap: wrap;
-  @include desktop {
-    @include flexCenter;
-    margin-top: 16px;
-  }
 }
 .social__list {
   @include flexCenter;

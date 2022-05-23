@@ -14,6 +14,7 @@
 }
 .breadcrumbs__list {
   @include tablet {
+    gap: 30px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -41,13 +42,16 @@
   // &:hover .breadcrumbs__about {
   //   transform: translateY(0);
   // }
-  &:not(:nth-child(10n)) {
+  &:not(:nth-child(9n)) {
     margin-bottom: 30px;
   }
   @include tablet {
+    &:not(:nth-child(9n)) {
+      margin-bottom: 0px;
+    }
     flex-basis: calc((100% - 30px) / 2);
-    margin-bottom: 30px;
-    margin-right: 30px;
+    // margin-bottom: 30px;
+    // margin-right: 30px;
     &:nth-child(2n) {
       margin-right: 0px;
     }
@@ -55,10 +59,10 @@
   @include desktop {
     display: block;
     flex-basis: calc(100% / 3 - 30px);
-    &:not(:nth-child(3n)) {
-      margin-right: 30px;
-      margin-bottom: 30px;
-    }
+    // &:not(:nth-child(3n)) {
+    //   margin-right: 30px;
+    //   margin-bottom: 30px;
+    // }
   }
 }
 
