@@ -4,431 +4,492 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Portfolio</title>
-    <link 
-    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" 
-    rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="body">
-      <header class="header">
-        <div class="container nav  header__container">
-      <nav class="nav"><a href="./index.html" class="logo header__logo"><span class="header__primary">Web</span><span class="header__secondary">Studio</span></a>
-      <ul class="nav__list list">
-          <li class="nav__item"><a class="nav__link link" href="./index.html">Студия</a></li>
-          <li class="nav__item"><a class="nav__link nav__link--current link" href="">Портфолио</a></li>
-          <li class="nav___item"><a class="nav__link link" href="">Контакты</a></li>
+    <header class="header">
+      <div class="container nav header__container">
+        <nav class="nav">
+          <a href="./index.html" class="logo header__logo"
+            ><span class="header__primary">Web</span
+            ><span class="header__secondary">Studio</span></a
+          >
+          <ul class="nav__list list">
+            <li class="nav__item"><a class="nav__link link" href="./index.html">Студия</a></li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--current link" href="">Портфолио</a>
+            </li>
+            <li class="nav___item"><a class="nav__link link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="header__contacts contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-Telephone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-      <ul class="header__contacts contacts list">
-        <li class="contacts__item">
-          <a class="contacts__link link" href="mailto:info@devstudio.com">
-     <svg class="contacts__icon" width="16" height="12">
-       <use href="./images/sprite.svg#icon-envelope"></use>
-     </svg>info@devstudio.com</a>
-        </li>
-        <li class="contacts__item"><a class="contacts__link link" href="tel:+380961111111">
-         <svg class="contacts__icon" width="10" height="16">
-           <use href="./images/sprite.svg#icon-Telephone"></use>
-         </svg> 
-          +38 096 111 11 11</a></li>
-      </ul>
-       <button type="button" class="header__menu">
+        <button type="button" class="header__menu">
           <svg class="header__icon" width="40px" height="40px">
             <use href="./images/Icons/sprite.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
       <div class="menu is-hidden">
-          <nav class="menu__nav">
-            <ul class="menu__nav list">
-              <li class="menu__nav__item">
-                <a href="./index.html" class="menu__link link">Студия</a>
-              </li>
-              <li class="menu__nav__item"><a href="" class="menu__link--current link">Портфолио</a></li>
-              <li class="menu__nav__item">
-                <a href="" class="menu__link link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="menu__bottom">
-            <ul class="menu__contacts list">
-              <li class="menu__contacts-item">
-                <a href="tel:+380961111111" class="menu__contacts-tel link">+38 096 111 11 11</a>
-              </li>
-              <li class="menu__contacts-item">
-                <a href="mailto:info@devstudio.com" class="menu__contacts-mail link">
-                  info@devstudio.com
-                </a>
-              </li>
-            </ul>
-            <ul class="menu__social list">
-              <li class="menu__social-item">
-                <a href="" class="menu__social-link link">Instagram</a>
-              </li>
-              <li class="menu__social-item">
-                <a href="" class="menu__social-link link">Twitter</a>
-              </li>
-              <li class="menu__social-item">
-                <a href="" class="menu__social-link link">Facebook</a>
-              </li>
-              <li class="menu__social-item">
-                <a href="" class="menu__social-link link">Linkedin</a>
-              </li>
-            </ul>
-            <button type="button" class="menu__close">
-              <svg width="40px" height="40px">
-                <use href="./images/Icons/sprite.svg#icon-close1"></use>
-              </svg>
-            </button>
-          </div>
-    </div>
+        <nav class="menu__nav">
+          <ul class="menu__nav list">
+            <li class="menu__nav__item">
+              <a href="./index.html" class="menu__link link">Студия</a>
+            </li>
+            <li class="menu__nav__item">
+              <a href="" class="menu__link--current link">Портфолио</a>
+            </li>
+            <li class="menu__nav__item">
+              <a href="" class="menu__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu__bottom">
+          <ul class="menu__contacts list">
+            <li class="menu__contacts-item">
+              <a href="tel:+380961111111" class="menu__contacts-tel link">+38 096 111 11 11</a>
+            </li>
+            <li class="menu__contacts-item">
+              <a href="mailto:info@devstudio.com" class="menu__contacts-mail link">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="menu__social list">
+            <li class="menu__social-item">
+              <a href="" class="menu__social-link link">Instagram</a>
+            </li>
+            <li class="menu__social-item">
+              <a href="" class="menu__social-link link">Twitter</a>
+            </li>
+            <li class="menu__social-item">
+              <a href="" class="menu__social-link link">Facebook</a>
+            </li>
+            <li class="menu__social-item">
+              <a href="" class="menu__social-link link">Linkedin</a>
+            </li>
+          </ul>
+          <button type="button" class="menu__close">
+            <svg width="40px" height="40px">
+              <use href="./images/Icons/sprite.svg#icon-close1"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </header>
     <!--Section-->
     <main>
       <section class="breadcrumbs">
         <div class="container">
-        <ul class="button-nav list">
-        <li class="item"><button class="button accent" type="button">Все</button></li>
-        <li class="item"><button class="button" type="button">Веб-сайты</button></li>
-        <li class="item"><button class="button" type="button">Приложение</button></li>
-        <li class="item"><button class="button" type="button">Дизайн</button></li>
-        <li class="item"><button class="button" type="button">Маркетинг</button></li>
-      </ul>
-     <ul class="breadcrumbs__list list">
-        <li class="breadcrumbs__elements">
-          <a class="breadcrumbs__link list" href="">
-            <div class="breadcrumbs__text">
-           <picture>
-                <source
-                  srcset="./images/2page/1.jpg 1x, ./images/2page/1-2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="./images/2page/1-tab-1x.jpg 1x, ./images/2page/1-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/2page/1-mob-1x.jpg 1x, ./images/2page/1-mob-2x.jpg 2x"
-                  media="(min-width: 320px)"
-                />
-                <img
-                  srcset="./images/2page/1.jpg 1x, ./images/2page/1-2x.jpg 2x"
-                  src="./images/2page/1.jpg"
-                  alt=""
-                />
-              </picture>
-          <p class="breadcrumbs__about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+          <ul class="button-nav list">
+            <li class="item"><button class="button accent" type="button">Все</button></li>
+            <li class="item"><button class="button" type="button">Веб-сайты</button></li>
+            <li class="item"><button class="button" type="button">Приложение</button></li>
+            <li class="item"><button class="button" type="button">Дизайн</button></li>
+            <li class="item"><button class="button" type="button">Маркетинг</button></li>
+          </ul>
+          <ul class="breadcrumbs__list list">
+            <li class="breadcrumbs__elements">
+              <a class="breadcrumbs__link list" href="">
+                <div class="breadcrumbs__text">
+                  <picture>
+                    <source
+                      srcset="./images/2page/1.jpg 1x, ./images/2page/1-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/2page/1-tab-1x.jpg 1x, ./images/2page/1-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/2page/1-mob-1x.jpg 1x, ./images/2page/1-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="./images/2page/1.jpg 1x, ./images/2page/1-2x.jpg 2x"
+                      src="./images/2page/1.jpg"
+                      alt=""
+                    />
+                  </picture>
+                  <p class="breadcrumbs__about">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="breadcrumbs__holder">
                   <h3 class="breadcrumbs__title">Технокряк</h3>
-                    <p class="breadcrumbs__subtitle">Веб-сайт</p>
-                  </div>
-            </img>
-          </a>
-        </li>
-        <li class="breadcrumbs__elements">
-          <a class="breadcrumbs__link list" href="">
-             <div class="breadcrumbs__text">
-            <picture>
-                <source
-                  srcset="./images/2page/2.jpg 1x, ./images/2page/2-2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="./images/2page/2-tab-1x.jpg 1x, ./images/2page/2-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/2page/2-mob-1x.jpg 1x, ./images/2page/2-mob-2x.jpg 2x"
-                  media="(min-width: 320px)"
-                />
-                <img
-                  srcset="./images/2page/2.jpg 1x, ./images/2page/2-2x.jpg 2x"
-                  src="./images/2page/2.jpg"
-                  alt=""
-                />
-              </picture>
-            <p class="breadcrumbs__about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                  <p class="breadcrumbs__subtitle">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="breadcrumbs__elements">
+              <a class="breadcrumbs__link list" href="">
+                <div class="breadcrumbs__text">
+                  <picture>
+                    <source
+                      srcset="./images/2page/2.jpg 1x, ./images/2page/2-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/2page/2-tab-1x.jpg 1x, ./images/2page/2-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/2page/2-mob-1x.jpg 1x, ./images/2page/2-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="./images/2page/2.jpg 1x, ./images/2page/2-2x.jpg 2x"
+                      src="./images/2page/2.jpg"
+                      alt=""
+                    />
+                  </picture>
+                  <p class="breadcrumbs__about">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="breadcrumbs__holder">
                   <h3 class="breadcrumbs__title">Постер New Orlean vs Golden Star</h3>
-                    <p class="breadcrumbs__subtitle">Дизайн</p>
-                  </div>
-            </img>
-            </a>
-        </li>
-        <li class="breadcrumbs__elements">
-          <a class="breadcrumbs__link list" href="">
-            <div class="breadcrumbs__text">
-              <picture>
-                <source
-                  srcset="./images/2page/3.jpg 1x, ./images/2page/3-2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="./images/2page/3-tab-1x.jpg 1x, ./images/2page/3-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/2page/3-mob-1x.jpg 1x, ./images/2page/3-mob-2x.jpg 2x"
-                  media="(min-width: 320px)"
-                />
-                <img
-                  srcset="./images/2page/3.jpg 1x, ./images/2page/3-2x.jpg 2x"
-                  src="./images/2page/3.jpg"
-                  alt=""
-                />
-              </picture>
-             <p class="breadcrumbs__about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                  <p class="breadcrumbs__subtitle">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="breadcrumbs__elements">
+              <a class="breadcrumbs__link list" href="">
+                <div class="breadcrumbs__text">
+                  <picture>
+                    <source
+                      srcset="./images/2page/3.jpg 1x, ./images/2page/3-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/2page/3-tab-1x.jpg 1x, ./images/2page/3-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/2page/3-mob-1x.jpg 1x, ./images/2page/3-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="./images/2page/3.jpg 1x, ./images/2page/3-2x.jpg 2x"
+                      src="./images/2page/3.jpg"
+                      alt=""
+                    />
+                  </picture>
+                  <p class="breadcrumbs__about">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="breadcrumbs__holder">
                   <h3 class="breadcrumbs__title">Ресторан Seafood</h3>
-                    <p class="breadcrumbs__subtitle">Приложение</p>
-                  </div>
-            </img>
-            </a>
-        </li>
-        <li class="breadcrumbs__elements">
-          <a class="breadcrumbs__link list" href="">
-            <div class="breadcrumbs__text">
-           <picture>
-                <source
-                  srcset="./images/2page/4.jpg 1x, ./images/2page/4-2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="./images/2page/4-tab-1x.jpg 1x, ./images/2page/4-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/2page/4-mob-1x.jpg 1x, ./images/2page/4-mob-2x.jpg 2x"
-                  media="(min-width: 320px)"
-                />
-                <img
-                  srcset="./images/2page/4.jpg 1x, ./images/2page/4-2x.jpg 2x"
-                  src="./images/2page/4.jpg"
-                  alt=""
-                />
-              </picture>
-             <p class="breadcrumbs__about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                  <p class="breadcrumbs__subtitle">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="breadcrumbs__elements">
+              <a class="breadcrumbs__link list" href="">
+                <div class="breadcrumbs__text">
+                  <picture>
+                    <source
+                      srcset="./images/2page/4.jpg 1x, ./images/2page/4-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/2page/4-tab-1x.jpg 1x, ./images/2page/4-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/2page/4-mob-1x.jpg 1x, ./images/2page/4-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="./images/2page/4.jpg 1x, ./images/2page/4-2x.jpg 2x"
+                      src="./images/2page/4.jpg"
+                      alt=""
+                    />
+                  </picture>
+                  <p class="breadcrumbs__about">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="breadcrumbs__holder">
                   <h3 class="breadcrumbs__title">Проект Prime</h3>
                   <p class="breadcrumbs__subtitle">Маркетинг</p>
-                  </div>
-            </img>
-            </a>
-        </li>
-        <li class="breadcrumbs__elements">
-          <a class="breadcrumbs__link list" href="">
-            <div class="breadcrumbs__text">
-            <picture>
-                <source
-                  srcset="./images/2page/5.jpg 1x, ./images/2page/5-2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="./images/2page/5-tab-1x.jpg 1x, ./images/2page/5-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/2page/5-mob-1x.jpg 1x, ./images/2page/5-mob-2x.jpg 2x"
-                  media="(min-width: 320px)"
-                />
-                <img
-                  srcset="./images/2page/5.jpg 1x, ./images/2page/5-2x.jpg 2x"
-                  src="./images/2page/5.jpg"
-                  alt=""
-                />
-              </picture>
-             <p class="breadcrumbs__about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                </div>
+              </a>
+            </li>
+            <li class="breadcrumbs__elements">
+              <a class="breadcrumbs__link list" href="">
+                <div class="breadcrumbs__text">
+                  <picture>
+                    <source
+                      srcset="./images/2page/5.jpg 1x, ./images/2page/5-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/2page/5-tab-1x.jpg 1x, ./images/2page/5-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/2page/5-mob-1x.jpg 1x, ./images/2page/5-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="./images/2page/5.jpg 1x, ./images/2page/5-2x.jpg 2x"
+                      src="./images/2page/5.jpg"
+                      alt=""
+                    />
+                  </picture>
+                  <p class="breadcrumbs__about">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="breadcrumbs__holder">
                   <h3 class="breadcrumbs__title">Проект Boxes</h3>
                   <p class="breadcrumbs__subtitle">Приложение</p>
-                  </div>
-            </img>
-            </a>
-        </li>
-        <li class="breadcrumbs__elements">
-          <a class="breadcrumbs__link list" href="">
-            <div class="breadcrumbs__text">
-            <picture>
-                <source
-                  srcset="./images/2page/6.jpg 1x, ./images/2page/6-2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="./images/2page/6-tab-1x.jpg 1x, ./images/2page/6-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/2page/6-mob-1x.jpg 1x, ./images/2page/6-mob-2x.jpg 2x"
-                  media="(min-width: 320px)"
-                />
-                <img
-                  srcset="./images/2page/6.jpg 1x, ./images/2page/6-2x.jpg 2x"
-                  src="./images/2page/6.jpg"
-                  alt=""
-                />
-              </picture>
-             <p class="breadcrumbs__about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                </div>
+              </a>
+            </li>
+            <li class="breadcrumbs__elements">
+              <a class="breadcrumbs__link list" href="">
+                <div class="breadcrumbs__text">
+                  <picture>
+                    <source
+                      srcset="./images/2page/6.jpg 1x, ./images/2page/6-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/2page/6-tab-1x.jpg 1x, ./images/2page/6-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/2page/6-mob-1x.jpg 1x, ./images/2page/6-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="./images/2page/6.jpg 1x, ./images/2page/6-2x.jpg 2x"
+                      src="./images/2page/6.jpg"
+                      alt=""
+                    />
+                  </picture>
+                  <p class="breadcrumbs__about">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="breadcrumbs__holder">
                   <h3 class="breadcrumbs__title">Inspiration has no Borders</h3>
-                    <p class="breadcrumbs__subtitle">Веб-сайт</p>
-                  </div>
-            </img>
-            </a>
-        </li>
-        <li class="breadcrumbs__elements">
-          <a class="breadcrumbs__link list" href="">
-            <div class="breadcrumbs__text">
-            <picture>
-                <source
-                  srcset="./images/2page/7.jpg 1x, ./images/2page/7-2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="./images/2page/7-tab-1x.jpg 1x, ./images/2page/7-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/2page/7-mob-1x.jpg 1x, ./images/2page/7-mob-2x.jpg 2x"
-                  media="(min-width: 320px)"
-                />
-                <img
-                  srcset="./images/2page/7.jpg 1x, ./images/2page/7-2x.jpg 2x"
-                  src="./images/2page/7.jpg"
-                  alt=""
-                />
-              </picture>
-             <p class="breadcrumbs__about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
-                <div class="breadcrumbs__holder"><h3 class="breadcrumbs__title">Издание Limited Edition</h3>
-                    <p class="breadcrumbs__subtitle">Дизайн</p>
-                  </div>
-            </img>
-            </a>
-        </li>
-        <li class="breadcrumbs__elements">
-          <a class="breadcrumbs__link list" href="">
-            <div class="breadcrumbs__text">
-            <picture>
-                <source
-                  srcset="./images/2page/8.jpg 1x, ./images/2page/8-2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="./images/2page/8-tab-1x.jpg 1x, ./images/2page/8-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/2page/8-mob-1x.jpg 1x, ./images/2page/8-mob-2x.jpg 2x"
-                  media="(min-width: 320px)"
-                />
-                <img
-                  srcset="./images/2page/8.jpg 1x, ./images/2page/8-2x.jpg 2x"
-                  src="./images/2page/8.jpg"
-                  alt=""
-                />
-              </picture>
-             <p class="breadcrumbs__about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
-                <div class="breadcrumbs__holder"><h3 class="breadcrumbs__title">Проект LAB</h3>
-                    <p class="breadcrumbs__subtitle">Маркетинг</p>
-                  </div>
-            </img>
-            </a>
-        </li>
-        <li class="breadcrumbs__elements">
-          <a class="breadcrumbs__link list" href="">
-            <div class="breadcrumbs__text">
-            <picture>
-                <source
-                  srcset="./images/2page/9.jpg 1x, ./images/2page/9-2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="./images/2page/9-tab-1x.jpg 1x, ./images/2page/9-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/2page/9-mob-1x.jpg 1x, ./images/2page/9-mob-2x.jpg 2x"
-                  media="(min-width: 320px)"
-                />
-                <img
-                  srcset="./images/2page/9.jpg 1x, ./images/2page/9-2x.jpg 2x"
-                  src="./images/2page/9.jpg"
-                  alt=""
-                />
-              </picture>
-             <p class="breadcrumbs__about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
-                <div class="breadcrumbs__holder"><h3 class="breadcrumbs__title" >Growing Business</h3>
-                    <p class="breadcrumbs__subtitle">Приложение</p></div>
-            </img>
-            </a>
-        </li>
-      </ul></div>
-    </section>
-    </main>
-    <!--footer-->
-        <footer class="footer">
-      <div class="container">
-        <div class="footer__meta">
-        <div class="footer-address">
-          <a class="logo" href="WebStudio"
-            ><span class="primary">Web</span><span class="footer__secondary">Studio</span></a
-          >
-          <address>
-            <ul class="footer__container list">
-              <li class="item">
-                <a
-                  class="footer__address link"
-                  href="https://goo.gl/maps/4HyzWn5kAAkS3F1K7"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
-              </li>
-              <li class="item">
-                <a class="footer__contact link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="item">
-                <a class="footer__contact link" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="footer__social">
-          <h2 class="footer__title">Присоединяйтесь</h2>
-          <ul class="footer__social-list list">
-            <li class="footer__social-item">
-              <a href="" class="footer__social-link link">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram-2"></use>
-                </svg>
+                  <p class="breadcrumbs__subtitle">Веб-сайт</p>
+                </div>
               </a>
             </li>
-            <li class="footer__social-item">
-              <a href="" class="footer__social-link">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter-1"></use>
-                </svg>
+            <li class="breadcrumbs__elements">
+              <a class="breadcrumbs__link list" href="">
+                <div class="breadcrumbs__text">
+                  <picture>
+                    <source
+                      srcset="./images/2page/7.jpg 1x, ./images/2page/7-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/2page/7-tab-1x.jpg 1x, ./images/2page/7-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/2page/7-mob-1x.jpg 1x, ./images/2page/7-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="./images/2page/7.jpg 1x, ./images/2page/7-2x.jpg 2x"
+                      src="./images/2page/7.jpg"
+                      alt=""
+                    />
+                  </picture>
+                  <p class="breadcrumbs__about">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="breadcrumbs__holder">
+                  <h3 class="breadcrumbs__title">Издание Limited Edition</h3>
+                  <p class="breadcrumbs__subtitle">Дизайн</p>
+                </div>
               </a>
             </li>
-            <li class="footer__social-item">
-              <a href="" class="footer__social-link">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook-1"></use>
-                </svg>
+            <li class="breadcrumbs__elements">
+              <a class="breadcrumbs__link list" href="">
+                <div class="breadcrumbs__text">
+                  <picture>
+                    <source
+                      srcset="./images/2page/8.jpg 1x, ./images/2page/8-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/2page/8-tab-1x.jpg 1x, ./images/2page/8-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/2page/8-mob-1x.jpg 1x, ./images/2page/8-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="./images/2page/8.jpg 1x, ./images/2page/8-2x.jpg 2x"
+                      src="./images/2page/8.jpg"
+                      alt=""
+                    />
+                  </picture>
+                  <p class="breadcrumbs__about">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="breadcrumbs__holder">
+                  <h3 class="breadcrumbs__title">Проект LAB</h3>
+                  <p class="breadcrumbs__subtitle">Маркетинг</p>
+                </div>
               </a>
             </li>
-            <li class="footer__social-item">
-              <a href="" class="footer__social-link">
-                <svg class="social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                </svg>
+            <li class="breadcrumbs__elements">
+              <a class="breadcrumbs__link list" href="">
+                <div class="breadcrumbs__text">
+                  <picture>
+                    <source
+                      srcset="./images/2page/9.jpg 1x, ./images/2page/9-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/2page/9-tab-1x.jpg 1x, ./images/2page/9-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/2page/9-mob-1x.jpg 1x, ./images/2page/9-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      srcset="./images/2page/9.jpg 1x, ./images/2page/9-2x.jpg 2x"
+                      src="./images/2page/9.jpg"
+                      alt=""
+                    />
+                  </picture>
+                  <p class="breadcrumbs__about">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="breadcrumbs__holder">
+                  <h3 class="breadcrumbs__title">Growing Business</h3>
+                  <p class="breadcrumbs__subtitle">Приложение</p>
+                </div>
               </a>
             </li>
           </ul>
         </div>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__meta">
+          <div class="footer-address">
+            <a class="logo" href="WebStudio"
+              ><span class="primary">Web</span><span class="footer__secondary">Studio</span></a
+            >
+            <address>
+              <ul class="footer__container list">
+                <li class="item">
+                  <a
+                    class="footer__address link"
+                    href="https://goo.gl/maps/4HyzWn5kAAkS3F1K7"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="item">
+                  <a class="footer__contact link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="item">
+                  <a class="footer__contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__social">
+            <h2 class="footer__title">Присоединяйтесь</h2>
+            <ul class="footer__social-list list">
+              <li class="footer__social-item">
+                <a href="" class="footer__social-link link">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="" class="footer__social-link">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="" class="footer__social-link">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="" class="footer__social-link">
+                  <svg class="social-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <form class="footer__join">
           <p class="footer__join-title">Подпишитесь на рассылку</p>
@@ -450,6 +511,6 @@
         </form>
       </div>
     </footer>
-     <script src="./js/menu.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
